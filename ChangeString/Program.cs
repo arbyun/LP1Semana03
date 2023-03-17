@@ -14,7 +14,8 @@ namespace ChangeString
             char userCharacter = Console.ReadKey().KeyChar;
             
             string strWithoutChar = "";
-            
+
+            Debug.Assert(userString != null, nameof(userString) + " != null");
             foreach (var t in userString)
             {
                 if (t != userCharacter)
@@ -23,7 +24,7 @@ namespace ChangeString
                 }
             }
             
-            Console.WriteLine(strWithoutChar);
+            Console.WriteLine("\nResult:"+strWithoutChar);
         }
     }
 }
