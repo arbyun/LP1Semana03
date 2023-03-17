@@ -54,6 +54,16 @@ namespace PlayerPerks
             }
             
             Console.WriteLine($"Player perks: {playerPerks}");
+            
+            if ((playerPerks & (PlayerPerks.Stealth | PlayerPerks.DoubleJump)) == (PlayerPerks.Stealth | PlayerPerks.DoubleJump))
+            {
+                Console.WriteLine("Silent jumper!");
+            }
+
+            if ((playerPerks & PlayerPerks.AutoHeal) == PlayerPerks.AutoHeal)
+            {
+                Console.WriteLine("Not gonna make it!");
+            }
         }
     }
 }
