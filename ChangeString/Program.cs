@@ -12,6 +12,18 @@ namespace ChangeString
 
             Console.WriteLine("Now input a character!");
             char userCharacter = Console.ReadKey().KeyChar;
+            
+            string strWithoutChar = "";
+            
+            foreach (var t in userString)
+            {
+                if (t != userCharacter)
+                {
+                    strWithoutChar += t;
+                }
+            }
+            
+            Console.WriteLine(strWithoutChar);
         }
     }
 }
