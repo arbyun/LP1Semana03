@@ -6,7 +6,7 @@ namespace GitBranching
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Goodbye!");
+            Console.WriteLine("Goodbye and Bye!");
         }
     }
 }
