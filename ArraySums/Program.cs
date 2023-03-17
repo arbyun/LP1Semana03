@@ -20,10 +20,24 @@ namespace ArraySums
                 for (int j = 0; j < verticalArray; j++)
                 {
                     Console.WriteLine($"Current position: [{i}, {j}]\n\n");
-                    Console.WriteLine("Please input a pair of floats into your array:");
+                    Console.WriteLine("Please input a float into your array:");
                     myArray[i, j] = Console.Read();
                     Console.WriteLine("\nDone!");
                 }
+            }
+            
+            // Sum row values
+            Console.WriteLine("\nSum of values - Per Row:");
+            for (int i = 0; i < horizontalArray; i++)
+            {
+                float totalSum = 0;
+
+                for (int j = 0; j < verticalArray; j++)
+                {
+                    totalSum += myArray[i, j];
+                }
+                
+                Console.WriteLine($"Row number {i}'s sum: {totalSum}");
             }
         }
     }
