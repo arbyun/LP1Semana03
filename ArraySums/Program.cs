@@ -39,6 +39,20 @@ namespace ArraySums
                 
                 Console.WriteLine($"Row number {i}'s sum: {totalSum}");
             }
+            
+            // Columns : invert
+            Console.WriteLine("\nSum of values - Per Column:");
+            for (int i = 0; i < verticalArray; i++)
+            {
+                float totalSum = 0;
+
+                for (int j = 0; j < horizontalArray; j++)
+                {
+                    totalSum += myArray[i, j];
+                }
+                
+                Console.WriteLine($"Column number {i}'s sum: {totalSum}");
+            }
         }
     }
 }
